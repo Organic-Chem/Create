@@ -8,13 +8,12 @@ function setup() {
 }
 
 function draw() {
-	line(startX, startY, endX, endY);
 }
 function mouseReleased() {
 	endX = mouseX;
 	endY = mouseY;
 
-	draw();
+	line(startX, startY, endX, endY);
 }
 function mousePressed(){
 	startX = mouseX;
