@@ -14,8 +14,8 @@ function mousePressed(){
 	startY = mouseY;
 }
 function mouseDragged(){
-	fill(white);
-	line(startX, startY, endX, endY);
+	//fill(white);
+	//line(startX, startY, endX, endY);
 
 	endX = mouseX;
 	endY = mouseY;
