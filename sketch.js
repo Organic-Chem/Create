@@ -6,15 +6,13 @@ var endY = 0;
 function setup() {
 	createCanvas(640, 480);
 }
-
-
+function mousePressed(){
+	startX = mouseX;
+	startY = mouseY;
+}
 function mouseReleased() {
 	endX = mouseX;
 	endY = mouseY;
 
 	line(startX, startY, endX, endY);
-}
-function mousePressed(){
-	startX = mouseX;
-	startY = mouseY;
 }
