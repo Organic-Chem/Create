@@ -17,7 +17,7 @@ function setup() {
 	lineButton.mousePressed(line);
 
 	eraseButton = createButton('Erase');
-	eraseButton.position(0, 20);
+	eraseButton.position(0, 40);
 	eraseButton.mousePressed(erase);
 }
 function draw(){
