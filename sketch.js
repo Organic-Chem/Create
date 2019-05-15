@@ -3,8 +3,8 @@ var startY = 0;
 var endX = 0;
 var endY = 0;
 
-var black = color(0, 0, 0);
-var white = color(255, 255, 255);
+//var black = color(0, 0, 0);
+//var white = color(255, 255, 255);
 
 function setup() {
 	createCanvas(640, 480);
