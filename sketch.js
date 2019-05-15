@@ -9,10 +9,6 @@ var white = color(255, 255, 255);
 function setup() {
 	createCanvas(640, 480);
 }
-function mousePressed(){
-	startX = mouseX;
-	startY = mouseY;
-}
 function mouseDragged(){
 	//fill(white);
 	//line(startX, startY, endX, endY);
@@ -22,6 +18,10 @@ function mouseDragged(){
 
 	fill(black);
 	line(startX, startY, endX, endY);
+}
+function mousePressed(){
+	startX = mouseX;
+	startY = mouseY;
 }
 function mouseReleased() {
 	endX = mouseX;
