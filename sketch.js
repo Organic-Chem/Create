@@ -9,6 +9,9 @@ var white = color(255, 255, 255);
 function setup() {
 	createCanvas(640, 480);
 }
+function draw(){
+	line(startX, startY, endX, endY);
+}
 function mouseDragged(){
 	//fill(white);
 	//line(startX, startY, endX, endY);
