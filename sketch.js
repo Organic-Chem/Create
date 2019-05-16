@@ -30,6 +30,8 @@ function mousePressed(){
 function mouseReleased() {
 	endX = mouseX;
 	endY = mouseY;
+
+	line(startX, startY, endX, endY);
 }
 function line(){
 	toLine = true;
