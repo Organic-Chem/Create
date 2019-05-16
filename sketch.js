@@ -3,7 +3,7 @@ var startY = 0;
 var endX = 0;
 var endY = 0;
 
-var toLine = true;
+var toLine = false;
 var toErase = false;
 
 var black = color(0, 0, 0);
@@ -28,7 +28,9 @@ function mouseReleased() {
 	endX = mouseX;
 	endY = mouseY;
 
-	line(startX, startY, endX, endY);
+	if (toLine == true){
+		line(startX, startY, endX, endY);
+	}
 }
 function line(){
 	toLine = true;
