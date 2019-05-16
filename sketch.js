@@ -20,29 +20,23 @@ function setup() {
 	eraseButton.position(0, 40);
 	eraseButton.mousePressed(erase);
 }
-function draw(){
-	if (toLine == true){
-		fill(black);
-		line(startX, startY, endX, endY);
-	}
-	if (toErase == true){
-		fill(white);
-		ellipse(startX, startY, 20, 20);
-	}
-}
 function mousePressed(){
 	startX = mouseX;
 	startY = mouseY;
 
 	if (toErase == true){
-		draw();
+		fill(white);
+		ellipse(startX, startY, 20, 20);
 	}
 }
 function mouseReleased() {
 	endX = mouseX;
 	endY = mouseY;
 
-	draw();
+	if (toLine == true){
+		fill(black);
+		line(startX, StartY, endX, endY);
+	}
 }
 function line(){
 	toLine = true;
