@@ -20,9 +20,6 @@ function setup() {
 	eraseButton.position(0, 80);
 	eraseButton.mousePressed(erase);
 }
-function draw(){
-
-}
 function mousePressed(){
 	startX = mouseX;
 	startY = mouseY;
