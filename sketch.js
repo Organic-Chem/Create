@@ -16,9 +16,9 @@ function setup() {
 	lineButton.position(0, 10);
 	lineButton.mousePressed(line);
 
-	eraseButton = createButton('Erase');
-	eraseButton.position(0, 80);
-	eraseButton.mousePressed(erase);
+	//eraseButton = createButton('Erase');
+	//eraseButton.position(0, 80);
+	//eraseButton.mousePressed(erase);
 }
 function mousePressed(){
 	startX = mouseX;
@@ -27,14 +27,13 @@ function mousePressed(){
 function mouseReleased() {
 	endX = mouseX;
 	endY = mouseY;
-
-	if (toLine == true){
-		line(startX, startY, endX, endY);
-	}
+	
+	line(startX, startY, endX, endY);
+	
 }
 function line(){
-	toLine = true;
-	toErase = false;
+	mousePressed();
+	mouseReleased();
 }
 function erase(){
 	toErase = true;
