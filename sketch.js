@@ -3,7 +3,7 @@ var startY = 0;
 var endX = 0;
 var endY = 0;
 
-let toLine = false;
+var toLine = false;
 var toErase = false;
 
 var black = color(0, 0, 0);
