@@ -20,6 +20,12 @@ function setup() {
 	//eraseButton.position(0, 80);
 	//eraseButton.mousePressed(erase);
 }
+function line(){
+	toLine = true;
+	toErase = false;
+
+	document.getElementById("test").innerHTML = "Line Called";
+}
 function mousePressed(){
 	startX = mouseX;
 	startY = mouseY;
@@ -29,13 +35,6 @@ function mouseReleased() {
 	endY = mouseY;
 	
 	line(startX, startY, endX, endY);
-	
-}
-function line(){
-	toLine = true;
-	toErase = false;
-
-	document.getElementById("test").innerHTML = "Line Called";
 }
 function erase(){
 	toErase = true;
