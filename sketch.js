@@ -32,8 +32,10 @@ function mouseReleased() {
 	
 }
 function line(){
-	mousePressed();
-	mouseReleased();
+	toLine = true;
+	toErase = false;
+
+	document.getElementById("test").innerHTML = "Line Called";
 }
 function erase(){
 	toErase = true;
