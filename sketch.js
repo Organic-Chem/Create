@@ -24,7 +24,7 @@ function line(){
 	toLine = true;
 	toErase = false;
 
-	document.getElementById("test").innerHTML = "Line Called";
+	document.write("Line Called");
 }
 function mousePressed(){
 	startX = mouseX;
