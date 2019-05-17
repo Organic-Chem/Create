@@ -9,6 +9,8 @@ var toErase = false;
 var black = color(0, 0, 0);
 var white = color(255, 255, 255);
 
+var lineButton;
+
 function setup() {
 	createCanvas(640, 480);
 
@@ -24,7 +26,7 @@ function line(){
 	toLine = true;
 	toErase = false;
 
-	document.write("Line Called");
+	document.write("The Line Function Has Been Called");
 }
 function mousePressed(){
 	startX = mouseX;
