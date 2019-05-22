@@ -21,7 +21,7 @@ function setup() {
 
 	lineButton = createButton('Draw Line');
 	lineButton.position(20, 10);
-	lineButton.mousePressed(line);
+	lineButton.mousePressed(setLine);
 
 	backgroundButton = createButton('Change Background');
 	backgroundButton.position(180, 10);
@@ -34,7 +34,7 @@ function setup() {
 	//eraseButton.position(0, 80);
 	//eraseButton.mousePressed(erase);
 }
-function line(){
+function setLine(){
 	backgroundColour = Math.random()*10;
 	background(backgroundColour);
 }
