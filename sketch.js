@@ -6,8 +6,6 @@ var endY = 0;
 var toLine = false;
 var toErase = false;
 
-var black = color(0, 0, 0);
-var white = color(255, 255, 255);
 var backgroundColour;
 
 var lineButton;
@@ -27,9 +25,11 @@ function setup() {
 	
 	eraseButton = createButton('Erase');
 	eraseButton.position(110, 10);
+	eraseButton.mousePressed(setErase);
 
 	clearButton = createButton('Clear');
 	clearButton.position(180, 10);
+	clearButton.mousePressed(clearScreen);
 
 	backgroundButton = createButton('Change Background');
 	backgroundButton.position(250, 10);
@@ -38,6 +38,13 @@ function setup() {
 function setLine(){
 	toLine = true;
 	toErase = false;
+}
+function setErase(){
+	toErase = true;
+	toLine = false;
+}
+function clearScreen(){
+	background(backgroundColour);
 }
 function changeBackground(){
 	backgroundColour = (Math.random()*105)+150;
@@ -54,8 +61,4 @@ function mouseReleased() {
 	if(toLine == true){
 		line(startX, startY, endX, endY);
 	}
-}
-function erase(){
-	toErase = true;
-	toLine = false;
 }
