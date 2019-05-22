@@ -36,8 +36,8 @@ function setup() {
 	backgroundButton.mousePressed(changeBackground);
 }
 function setLine(){
-	backgroundColour = Math.random()*10;
-	background(backgroundColour);
+	toLine = true;
+	toErase = false;
 }
 function changeBackground(){
 	backgroundColour = (Math.random()*105)+150;
@@ -51,7 +51,9 @@ function mouseReleased() {
 	endX = mouseX;
 	endY = mouseY;
 	
-	line(startX, startY, endX, endY);
+	if(toLine == true){
+		line(startX, startY, endX, endY);
+	}
 }
 function erase(){
 	toErase = true;
