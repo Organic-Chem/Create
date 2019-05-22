@@ -13,7 +13,7 @@ var toLine = true;
 var toErase = false;
 
 //Stores the colour of the background
-var backgroundColour;
+var backgroundColour = 150;
 
 //Variables for the buttons
 var lineButton;
@@ -27,7 +27,7 @@ function setup(){
 	createCanvas(800, 600);
 
 	//sets the colour of the background
-	background(150);
+	background(backgroundColour);
 
 	//Creates the line button and what is called when it is pressed
 	lineButton = createButton('Draw Line');
