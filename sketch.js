@@ -13,7 +13,7 @@ var lineButton;
 var button;
 
 function setup() {
-	createCanvas(640, 480);
+	createCanvas(800, 600);
 
 	background(0);
 
@@ -30,7 +30,7 @@ function setup() {
 	//eraseButton.mousePressed(erase);
 }
 function changeBG(){
-	var val = random(255);
+	var val = random(100);
 	background(val);
 }
 function line(){
