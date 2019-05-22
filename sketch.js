@@ -55,13 +55,13 @@ function mousePressed(){
 	startY = mouseY;
 
 	if(toErase == true){
-		fill(backgroundColour);
+		//fill(backgroundColour);
 		circle(mouseX, mouseY, 20);
 	}
 }
 function mouseDragged(){
 	if(toErase == true){
-		fill(backgroundColour);
+		//fill(backgroundColour);
 		circle(mouseX, mouseY, 20);
 	}
 function mouseReleased(){
@@ -69,7 +69,7 @@ function mouseReleased(){
 	endY = mouseY;
 	
 	if(toLine == true){
-		fill(0);
+		//fill(0);
 		line(startX, startY, endX, endY);
 	}
 }
