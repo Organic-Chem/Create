@@ -59,18 +59,12 @@ function mousePressed(){
 		circle(mouseX, mouseY, 20);
 	}
 }
-function mouseDragged(){
-	if(toErase == true){
-		fill(backgroundColour);
-		circle(mouseX, mouseY, 20);
-	}
-}
 function mouseReleased(){
 	endX = mouseX;
 	endY = mouseY;
 	
 	if(toLine == true){
-		//fill(0);
+		fill(0);
 		line(startX, startY, endX, endY);
 	}
 }
