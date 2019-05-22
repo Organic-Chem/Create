@@ -15,7 +15,7 @@ var button;
 function setup() {
 	createCanvas(800, 600);
 
-	background(0);
+	background(150);
 
 	button = createButton('click me');
 	button.position(0, 50);
