@@ -13,6 +13,7 @@ var backgroundColour;
 var lineButton;
 var backgroundButton;
 var eraseButton
+var clearButton
 
 function setup() {
 	createCanvas(800, 600);
@@ -23,16 +24,16 @@ function setup() {
 	lineButton.position(20, 10);
 	lineButton.mousePressed(setLine);
 
-	backgroundButton = createButton('Change Background');
-	backgroundButton.position(180, 10);
-	backgroundButton.mousePressed(changeBackground);
-
+	
 	eraseButton = createButton('Erase');
 	eraseButton.position(110, 10);
 
-	//eraseButton = createButton('Erase');
-	//eraseButton.position(0, 80);
-	//eraseButton.mousePressed(erase);
+	clearButton = createButton('Clear');
+	clearButton.position(180, 10);
+
+	backgroundButton = createButton('Change Background');
+	backgroundButton.position(250, 10);
+	backgroundButton.mousePressed(changeBackground);
 }
 function setLine(){
 	backgroundColour = Math.random()*10;
