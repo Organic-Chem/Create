@@ -24,11 +24,11 @@ function setup() {
 	lineButton.mousePressed(line);
 
 	backgroundButton = createButton('Change Background');
-	backgroundButton.position(120, 10);
+	backgroundButton.position(160, 10);
 	backgroundButton.mousePressed(changeBG);
 
 	eraseButton = createButton('Erase');
-	eraseButton.position(70, 10);
+	eraseButton.position(90, 10);
 
 	//eraseButton = createButton('Erase');
 	//eraseButton.position(0, 80);
