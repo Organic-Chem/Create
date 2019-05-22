@@ -53,11 +53,6 @@ function changeBackground(){
 function mousePressed(){
 	startX = mouseX;
 	startY = mouseY;
-
-	if(toErase == true){
-		fill(backgroundColour);
-		circle(mouseX, mouseY, 20);
-	}
 }
 function mouseReleased(){
 	endX = mouseX;
