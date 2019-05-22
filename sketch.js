@@ -20,15 +20,15 @@ function setup() {
 	background(150);
 
 	lineButton = createButton('Draw Line');
-	lineButton.position(0, 10);
+	lineButton.position(20, 10);
 	lineButton.mousePressed(line);
 
 	backgroundButton = createButton('Change Background');
-	backgroundButton.position(160, 10);
+	backgroundButton.position(180, 10);
 	backgroundButton.mousePressed(changeBG);
 
 	eraseButton = createButton('Erase');
-	eraseButton.position(90, 10);
+	eraseButton.position(110, 10);
 
 	//eraseButton = createButton('Erase');
 	//eraseButton.position(0, 80);
