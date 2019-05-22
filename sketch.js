@@ -34,15 +34,15 @@ function setup() {
 	//eraseButton.position(0, 80);
 	//eraseButton.mousePressed(erase);
 }
-function changeBG(){
-	backgroundColour = (Math.random()*105)+150;
-	background(backgroundColour);
-}
 function line(){
 	toLine = true;
 	toErase = false;
 
 	background(0);
+}
+function changeBG(){
+	backgroundColour = (Math.random()*105)+150;
+	background(backgroundColour);
 }
 function mousePressed(){
 	startX = mouseX;
