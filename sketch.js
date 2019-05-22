@@ -13,7 +13,7 @@ var backgroundButton;
 var eraseButton;
 var clearButton;
 
-function setup() {
+function setup(){
 	createCanvas(800, 600);
 
 	background(150);
@@ -55,15 +55,16 @@ function mousePressed(){
 	startY = mouseY;
 
 	if(toErase == true){
-		//fill(backgroundColour);
+		fill(backgroundColour);
 		circle(mouseX, mouseY, 20);
 	}
 }
 function mouseDragged(){
 	if(toErase == true){
-		//fill(backgroundColour);
+		fill(backgroundColour);
 		circle(mouseX, mouseY, 20);
 	}
+}
 function mouseReleased(){
 	endX = mouseX;
 	endY = mouseY;
