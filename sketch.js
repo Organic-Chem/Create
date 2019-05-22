@@ -18,7 +18,7 @@ function setup() {
 	background(0);
 
 	button = createButton('click me');
-	button.position(19, 19);
+	button.position(0, 30);
 	button.mousePressed(changeBG);
 
 	lineButton = createButton('Draw Line');
