@@ -19,16 +19,16 @@ function setup() {
 
 	background(150);
 
+	lineButton = createButton('Draw Line');
+	lineButton.position(0, 10);
+	lineButton.mousePressed(line);
+
 	backgroundButton = createButton('Change Background');
 	backgroundButton.position(120, 10);
 	backgroundButton.mousePressed(changeBG);
 
 	eraseButton = createButton('Erase');
 	eraseButton.position(70, 10);
-
-	lineButton = createButton('Draw Line');
-	lineButton.position(0, 10);
-	lineButton.mousePressed(line);
 
 	//eraseButton = createButton('Erase');
 	//eraseButton.position(0, 80);
