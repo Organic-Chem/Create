@@ -18,7 +18,7 @@ function setup() {
 	background(0);
 
 	button = createButton('click me');
-	button.position(0, 30);
+	button.position(0, 50);
 	button.mousePressed(changeBG);
 
 	lineButton = createButton('Draw Line');
@@ -30,7 +30,7 @@ function setup() {
 	//eraseButton.mousePressed(erase);
 }
 function changeBG(){
-	var val = random(100);
+	var val = (Math.random()*105)+150;
 	background(val);
 }
 function line(){
