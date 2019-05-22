@@ -35,7 +35,8 @@ function setup() {
 	//eraseButton.mousePressed(erase);
 }
 function line(){
-	background(0);
+	backgroundColour = Math.random()*10;
+	background(backgroundColour);
 }
 function changeBG(){
 	backgroundColour = (Math.random()*105)+150;
