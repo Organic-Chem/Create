@@ -6,7 +6,7 @@ var endY = 0;
 var toLine = false;
 var toErase = false;
 
-var backgroundColour = 150;
+var backgroundColour;
 
 var lineButton;
 var backgroundButton;
