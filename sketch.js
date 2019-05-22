@@ -10,8 +10,8 @@ var backgroundColour = (150);
 
 var lineButton;
 var backgroundButton;
-var eraseButton
-var clearButton
+var eraseButton;
+var clearButton;
 
 function setup() {
 	createCanvas(800, 600);
