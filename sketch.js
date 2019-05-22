@@ -25,7 +25,7 @@ function setup() {
 
 	backgroundButton = createButton('Change Background');
 	backgroundButton.position(180, 10);
-	backgroundButton.mousePressed(changeBG);
+	backgroundButton.mousePressed(changeBackground);
 
 	eraseButton = createButton('Erase');
 	eraseButton.position(110, 10);
@@ -38,7 +38,7 @@ function line(){
 	backgroundColour = Math.random()*10;
 	background(backgroundColour);
 }
-function changeBG(){
+function changeBackground(){
 	backgroundColour = (Math.random()*105)+150;
 	background(backgroundColour);
 }
