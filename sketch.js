@@ -43,8 +43,6 @@ function line(){
 	toErase = false;
 
 	background(0);
-
-	document.write("The Line Function Has Been Called");
 }
 function mousePressed(){
 	startX = mouseX;
