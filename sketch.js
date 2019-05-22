@@ -6,7 +6,7 @@ var endY = 0;
 var toLine = false;
 var toErase = false;
 
-var backgroundColour;
+var backgroundColour = (150);
 
 var lineButton;
 var backgroundButton;
@@ -16,7 +16,7 @@ var clearButton
 function setup() {
 	createCanvas(800, 600);
 
-	background(150);
+	background(backgroundColour);
 
 	lineButton = createButton('Draw Line');
 	lineButton.position(20, 10);
@@ -53,12 +53,23 @@ function changeBackground(){
 function mousePressed(){
 	startX = mouseX;
 	startY = mouseY;
+
+	if(toErase == true){
+		fill(backgroundColour);
+		circle(mouseX, mouseY, 20);
+	}
 }
-function mouseReleased() {
+function mouseDragged(){
+	if(toErase == true){
+		fill(backgroundColour);
+		circle(mouseX, mouseY, 20);
+	}
+function mouseReleased(){
 	endX = mouseX;
 	endY = mouseY;
 	
 	if(toLine == true){
+		fill(0);
 		line(startX, startY, endX, endY);
 	}
 }
