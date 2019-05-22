@@ -8,6 +8,7 @@ var toErase = false;
 
 var black = color(0, 0, 0);
 var white = color(255, 255, 255);
+var backgroundColour;
 
 var lineButton;
 var button;
@@ -17,8 +18,8 @@ function setup() {
 
 	background(150);
 
-	button = createButton('click me');
-	button.position(0, 50);
+	button = createButton('Change Background');
+	button.position(50, 10);
 	button.mousePressed(changeBG);
 
 	lineButton = createButton('Draw Line');
