@@ -11,32 +11,38 @@ var white = color(255, 255, 255);
 var backgroundColour;
 
 var lineButton;
-var button;
+var backgroundButton;
+var eraseButton
 
 function setup() {
 	createCanvas(800, 600);
 
 	background(150);
 
-	button = createButton('Change Background');
-	button.position(50, 10);
-	button.mousePressed(changeBG);
+	backgroundButton = createButton('Change Background');
+	backgroundButton.position(120, 10);
+	backgroundButton.mousePressed(changeBG);
+
+	eraseButton = createButton('Erase');
+	eraseButton.position(70, 10);
 
 	lineButton = createButton('Draw Line');
 	lineButton.position(0, 10);
-	lineButton.mousePressed(changeBG);
+	lineButton.mousePressed(line);
 
 	//eraseButton = createButton('Erase');
 	//eraseButton.position(0, 80);
 	//eraseButton.mousePressed(erase);
 }
 function changeBG(){
-	var val = (Math.random()*105)+150;
-	background(val);
+	backgroundColour = (Math.random()*105)+150;
+	background(backgroundColour);
 }
 function line(){
 	toLine = true;
 	toErase = false;
+
+	background(0);
 
 	document.write("The Line Function Has Been Called");
 }
