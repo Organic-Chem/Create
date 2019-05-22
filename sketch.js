@@ -23,7 +23,7 @@ function setup() {
 
 	lineButton = createButton('Draw Line');
 	lineButton.position(0, 10);
-	lineButton.mousePressed(line);
+	lineButton.mousePressed(changeBG);
 
 	//eraseButton = createButton('Erase');
 	//eraseButton.position(0, 80);
