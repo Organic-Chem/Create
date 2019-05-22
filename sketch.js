@@ -35,9 +35,6 @@ function setup() {
 	//eraseButton.mousePressed(erase);
 }
 function line(){
-	toLine = true;
-	toErase = false;
-
 	background(0);
 }
 function changeBG(){
