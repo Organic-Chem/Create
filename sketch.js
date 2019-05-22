@@ -6,7 +6,7 @@ var endY = 0;
 var toLine = false;
 var toErase = false;
 
-var backgroundColour = (150);
+var backgroundColour = 150;
 
 var lineButton;
 var backgroundButton;
@@ -16,7 +16,7 @@ var clearButton;
 function setup() {
 	createCanvas(800, 600);
 
-	background(backgroundColour);
+	background(150);
 
 	lineButton = createButton('Draw Line');
 	lineButton.position(20, 10);
